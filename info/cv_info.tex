@@ -1,0 +1,133 @@
+
+%%
+% Options
+
+%% Compile with LuaLaTeX for best results
+\documentclass[10pt,a4paper]{altacv}
+
+\geometry{left=1cm,right=9cm %right column size+1.2
+,marginparwidth=6.8cm %right column size
+,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Links
+\usepackage{hyperref}
+
+\setmainfont{Lato}
+
+% COLORS
+\definecolor{VividPurple}{HTML}{2E64FE}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% the bullets for itemize and rating marker for \cvskill
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%%%%%%%%
+% HEADER
+\begin{document}
+\name{Mathieu Béligon} \tagline{Agile Prototyper \& Developer}
+
+\personalinfo{
+  \email{mathieu.beligon@student.ecp.fr}
+  \phone{+33 6 20 37 02 86}
+  \location{Paris, France}
+  \linkedin{\url{linkedin.com/in/mathieuBeligon}}
+%  \mailaddress{1230 East Alexander Ave, Merced, CA 95340}
+%  \homepage{grantalexandermorgan.github.io/}
+%  \github{}
+%  \printinfo{symbol}{detail}
+}
+\personalpitch{Master of engineering student looking for a 6-month internship as part of the requirement of the Digital Tech Year. Hightly interrested in solving complexes challenges that migh require new solutions.}
+
+% print header
+\begin{adjustwidth}{}{-8cm}
+  \makecvheader
+\end{adjustwidth}
+
+
+%%%%%%%%%%%%%%%%%
+% Work Experience
+\cvsection[sidebar]{Experience}
+
+% DTY
+
+\cvevent{Agile prototyping}{\textsc{@ParisDigitalLab} Incubator}{Sept 2018 -- Ongoing}{Paris, France}
+Develop three minimum viable products in a 7-week constraints for real-world businesses, using scrum method.
+% \begin{itemize}
+%   \item Project 1
+%   \item Project 2
+%   \item Project 3
+% \end{itemize}
+
+{\textbf{Tech:}}\space{\small \cvtag{Angular 5} \cvtag{NodeJS} \cvtag{React}}
+
+\divider
+
+% RAID
+
+\cvevent{IT Manager}{@RaidCentraleSupélec}{May 2017 - May 2018}{Paris, France}
+The Raid CentraleSupélec is a student association organizing 2 major sport events.
+\begin{itemize}
+  \item Develop and maintain 4 websites \url{https://raidcs.com} ;
+  \item Develop a ranking tool for the races (needed to work with optional loops, orienteering ...).
+\end{itemize}
+{\textbf{Tech:}}\space{\small \cvtag{CSS 3} \cvtag{HTML 5} \cvtag{Latex} \cvtag{Php} \cvtag{Python} \cvtag{Symfony} \cvtag{Wordpress}}
+
+\divider
+
+% CROC
+
+\cvevent{Robot Competition}{@Eurobot France}{May 2018}{France}
+Build an autonomous Robot that would perform a set of actions against an opponent in time.
+
+Team position: 92\textsuperscript{e}/133.
+
+{\textbf{Tech:}}\space{\small \cvtag{Arduino} \cvtag{IA} \cvtag{SpaceClaim}}
+
+\divider
+
+% SWERC
+
+\cvevent{Competitive Programmer}{@SWERC, Southwestern Europe Regional Contest}{Nov 2016}{Porto, Portugal}
+Find optimized solutions for a set of complex problems in 5 hours, by team of 3 students.
+
+Team position: 21\textsuperscript{e}/60.
+
+{\textbf{Skills:}}\space{\small \cvtag{Algorithms} \cvtag{C++} \cvtag{Optimization} \cvtag{Segment trees} \cvtag{Union Find}}
+
+
+
+%%%%%%
+% TECH
+
+\cvsection{Tech Skills}
+
+\cvskills{\faFirefox}{Web}{
+ {Angular 5}, {Bootstrap}, {Bulma}, {CSS 3}, {HTML 5}, {Javascript}, {Jquery}, {NodeJs}, {Php}, {Symfony}, {Wordpress}
+}
+
+\divider
+
+\cvskills{\faCode}{Programming}{
+ {C}, {C++}, {Python}
+}
+
+\divider
+
+\cvskills{\faLaptop}{Software}{
+  {Arduino}, {Java}, {Python}
+}
+
+\divider
+
+\cvskills{\faWrench}{Tools}{
+  {Docker}, {Latex}, {Git}, {SublimeText}, {SQL}, {Trello}, {Slack}
+}
+
+
+\end{document}
