@@ -87,14 +87,13 @@
 \newcommand{\personalpitch}[1]{\def\@personalpitch{#1}}
 
 \newcommand{\makecvheader}{
-
-  \begin{minipage}{0.65\linewidth}
-    {\color{emphasis}\Huge\bfseries\MakeUppercase{\@name}\par}
-    \medskip
+  {\color{emphasis}\Huge\bfseries\MakeUppercase{\@name}\par}
+  \medskip
+  \begin{minipage}{0.6\linewidth}
     {\large\bfseries\color{accent}\@tagline\par}
     \medskip
     {\large\textit{\@personalpitch}}
-  \end{minipage}\hspace{5mm}
+  \end{minipage}\hspace{9mm}
   \begin{minipage}{0.35\linewidth}
     \bfseries\@personalinfo
   \end{minipage}
@@ -122,9 +121,9 @@
 }
 
 \newcommand{\cvevent}[4]{%
-  {\large\color{emphasis}#1\par}
+  {\large\color{accent}#1\par}
   \smallskip
-  \textbf{\color{accent}#2}\par
+  {\color{emphasis}#2}\par
   \smallskip
   {\small
     \faCalendar \hspace{0.5em}#3\space\space
@@ -161,10 +160,8 @@
 }
 
 \newcommand{\cvskills}[3]{
-  {\Large\color{accent}#1}\vspace{.5em}\space\space\bfseries\textcolor{emphasis}{#2}\space:\space
-  \begingroup\raggedright
-    \foreach \skill in {#3}{\small\cvtag{\skill}}\\
-  \endgroup
+  {\large\color{accent}#1}\vspace{.5em}\space\space\bfseries\textcolor{emphasis}{#2}\space:\space
+  \textbf #3
 }
 
 \newcommand{\cvref}[3]{%
