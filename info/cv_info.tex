@@ -5,6 +5,16 @@
 %% Compile with LuaLaTeX for best results
 \documentclass[10pt,a4paper]{altacv}
 
+\usepackage[utf8]{inputenc}
+\usepackage[TS1,T1]{fontenc}
+\usepackage{array, booktabs}
+\usepackage{graphicx}
+\usepackage{caption}
+\DeclareCaptionFont{blue}{\color{LightSteelBlue3}}
+
+\newcommand{\foo}{\color{LightSteelBlue3}\raisebox{-1.3ex}{\makebox[0pt]{\Large\bullet}}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
+
+
 \geometry{left=1cm,right=8.5cm %right column size+1.2
 ,marginparwidth=6.5cm %right column size
 ,marginparsep=1cm,top=1cm,bottom=1cm}
@@ -56,15 +66,22 @@
 
 % DTY
 
-\cvevent{Agile prototyping}{\textsc{@ParisDigitalLab} Incubator}{Sept 2018 -- Ongoing}{Paris, France}
+\cvevent{Agile Prototyper}{\textsc{@ParisDigitalLab} Incubator}{Sept 2018 -- Ongoing}{Paris, France}
 Develop three minimum viable products in a 7-week constraints for real-world businesses, using scrum method.
-% \begin{itemize}
-%   \item Project 1
-%   \item Project 2
-%   \item Project 3
-% \end{itemize}
 
-{\textbf{Tech:}}\space{\small \cvtag{Angular 5} \cvtag{NodeJS} \cvtag{React}}
+\begin{tabular}{@{\,}r <{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{\linewidth}}
+     &
+        \cvproject{IOT}{\textsc{@FrenchMinistryOfLabor}}
+        Develop an IOT multi sensor (\#todo) to help inspectors in their work.
+
+        \textbf{Tech:}\space{\small \cvtag{Arduino} \cvtag{BLE} \cvtag{Fritzing} \cvtag{React} \cvtag{SpaceClaim}}\\
+\end{tabular}
+
+% \hspace{9mm}
+
+\vspace{2mm}
+
+\textbf{Methodologies:}\space{\small \cvtag{Design Thinking} \cvtag{SCRUM}}
 
 \divider
 

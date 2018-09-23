@@ -34,7 +34,7 @@
   \newfontfamily{\AI}{academicons.ttf}
 \fi
 
-\RequirePackage{xcolor}
+\RequirePackage[x11names,table]{xcolor}
 
 \colorlet{accent}{blue!70!black}
 \colorlet{heading}{black}
@@ -132,6 +132,11 @@
   \medskip
 }
 
+\newcommand{\cvproject}[2]{%
+  {\large\color{accent}#1}\hspace{0.5em}{\color{emphasis}#2}\par
+  \smallskip
+}
+
 \newcommand{\cvsmallevent}[4]{%
   {\large\color{accent}#1\par}
   \smallskip
@@ -181,6 +186,8 @@
 \renewcommand{\bibsetup}{\vspace*{-\baselineskip}}
 \AtEveryBibitem{\makebox[\bibhang][l]{\itemmarker}}
 \setlength{\bibitemsep}{0.25\baselineskip}
+
+
 
 \AtBeginDocument{%
   \pagestyle{empty}
