@@ -120,6 +120,16 @@
   {\color{emphasis}\large\bfseries{#1}\par}\medskip
 }
 
+\newcommand{\cvbigevent}[4]{%
+  {\Large\color{accent}#1 - \large\color{emphasis}#2}\par
+  \smallskip
+  {\small
+    \faCalendar \hspace{0.5em}#3\space\space
+    \faMapMarker\hspace{0.5em}#4
+  }\par
+  \smallskip
+}
+
 \newcommand{\cvevent}[4]{%
   {\large\color{accent}#1\par}
   \smallskip
@@ -129,7 +139,7 @@
     \faCalendar \hspace{0.5em}#3\space\space
     \faMapMarker\hspace{0.5em}#4
   }\par
-  \medskip
+  \smallskip
 }
 
 \newcommand{\cvproject}[2]{%
