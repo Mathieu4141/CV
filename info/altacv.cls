@@ -89,7 +89,7 @@
 \newcommand{\makecvheader}{
   {\color{emphasis}\Huge\bfseries\MakeUppercase{\@name}\par}
   \medskip
-  \begin{minipage}{0.6\linewidth}
+  \begin{minipage}{0.59\linewidth}
     {\large\bfseries\color{accent}\@tagline\par}
     \medskip
     {\large\textit{\@personalpitch}}
