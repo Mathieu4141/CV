@@ -189,6 +189,10 @@
 %   \medskip
 }
 
+\newcommand{\septech}{
+  {\color{LightSteelBlue3}\bullet\vspace{1pt}}
+}
+
 \newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}}{\end{minipage}}
 
 \RequirePackage[backend=biber,style=authoryear]{biblatex}
