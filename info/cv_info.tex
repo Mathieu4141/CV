@@ -45,7 +45,7 @@
 
 \personalinfo{
   \email{mathieu.beligon@student.ecp.fr}
-  \phone{+33 6 20 37 02 86}
+  %\phone{+33 6 20 37 02 86}
   \location{Paris, France}
   \linkedin{\url{linkedin.com/in/mathieuBeligon}}
 %  \mailaddress{1230 East Alexander Ave, Merced, CA 95340}
@@ -53,7 +53,7 @@
 %  \github{}
 %  \printinfo{symbol}{detail}
 }
-\personalpitch{Master of engineering student looking for a 6-month internship as part of the Digital Tech Year requirement. Hightly interested in solving complex challenges that require new solutions.}
+\personalpitch{Master of engineering student. Hightly interested in solving complex challenges that require new solutions.}
 
 % print header
 \begin{adjustwidth}{}{-8cm}
@@ -65,15 +65,28 @@
 % Work Experience
 \cvsection[sidebar]{Experience}
 
+% FEEDLY
+
+\cvbigevent{Data scientist}{@Feedly Inc}{February 2019 - August 2019}{Reedwood City, California, USA}
+
+Develop a Machine Algorithm tool to propose relevant articles to readers.
+
+\divider
+
 % DTY
 
-\cvbigevent{Agile Prototyper}{\textsc{@ParisDigitalLab} Incubator}{Sept 2018 -- Ongoing}{Paris, France}
+\cvbigevent{Agile Prototyper}{\textsc{@ParisDigitalLab} Incubator}{Sept 2018 -- February 2019}{Paris, France}
 Develop three minimum viable products in a 7-week constraints for real-world businesses, using scrum method.
 
 \begin{tabular}{@{\,}r <{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{\linewidth}}
      &
-        \cvproject{\#2 Datalake}{\textsc{@BostonConsultingGroup (ongoing)}}
+        \cvproject{\#3 Computer Vision}{\textsc{@SmartphoneId}}
         Set up a datalake and develop a control tower for a 4.0 factory, dealing with both real time and consolidated data.
+
+        \textbf{Tech:}\space{\small \cvtag{Azure} \cvtag{React} \cvtag{Redux}}\\
+     &
+        \cvproject{\#2 Datalake}{\textsc{@BostonConsultingGroup}}
+        Set up a datalake and develop a control tower for a 4.0 factory, dealing with both real time and consolidated data through multiple sources.
 
         \textbf{Tech:}\space{\small \cvtag{Azure} \cvtag{React} \cvtag{Redux}}\\
      &
@@ -94,7 +107,7 @@ Develop three minimum viable products in a 7-week constraints for real-world bus
 % RAID
 
 \cvbigevent{IT Manager}{@RaidCentraleSupélec}{May 2017 - May 2018}{Paris, France}
-Develop and maintain 4 websites, along with a ranking tool (dealing with optional loops, orienteering ...) for a student association organizing 2 major sports events.\\
+Develop and maintain 4 websites, and a ranking tool (with optional loops, orienteering ...) for a student association organizing 2 major sports events.\\
 {\textbf{Tech:}}\space{\small \cvtag{CSS} \cvtag{HTML} \cvtag{Latex} \cvtag{Php} \cvtag{Python} \cvtag{Symfony} \cvtag{Wordpress}}
 \vspace{-3mm}
 
@@ -102,10 +115,8 @@ Develop and maintain 4 websites, along with a ranking tool (dealing with optiona
 
 % CROC
 
-\cvbigevent{Robot Competition}{@Eurobot France}{May 2018}{France}
+\cvbigevent{Robot Competition}{@Eurobot France}{May 2018}{France \space \faGraduationCap \hspace{0.5em}Team position: 92\textsuperscript{e}/133}
 Build an autonomous Robot that would perform a set of actions against an opponent under a limited time.
-
-Team position: 92\textsuperscript{e}/133.
 
 {\textbf{Tech:}}\space{\small \cvtag{Arduino} \cvtag{IA} \cvtag{SpaceClaim}}
 
@@ -113,10 +124,9 @@ Team position: 92\textsuperscript{e}/133.
 
 % SWERC
 
-\cvbigevent{Competitive Programmer}{@SWERC (regional ACM ICPC)}{Nov 2016}{Porto, Portugal}
+\cvbigevent{Competitive Programmer}{@SWERC (regional ACM ICPC)}{Nov 2016}{Porto, Portugal \space \faGraduationCap \hspace{0.5em}Team position: 21\textsuperscript{e}/60}
 Find optimized solutions for complex problems in 5 hours, by team of 3.
 
-Team position: 21\textsuperscript{e}/60.
 
 {\textbf{Skills:}}\space{\small \cvtag{Algorithms} \cvtag{C++} \cvtag{Optimization} \cvtag{Segment trees} \cvtag{Union Find}}
 
@@ -128,29 +138,25 @@ Team position: 21\textsuperscript{e}/60.
 \cvsection{Tech Skills}
 
 \cvskills{\faFirefox}{Web}{
- Angular 5\septech CSS 3\septech HTML 5\septech Javascript\septech Jquery\septech NodeJs\septech Php\septech \septech React\septech Redux \septech Symfony\septech Wordpress
+ Angular\septech Bulma\septech HTML-CSS\septech JS\septech React\septech Redux
 }
 \vspace{1mm}
 
 \cvskills{\faCode}{Programming}{
- C\septech C++\septech Python
-}
-
-\cvskills{\faLaptop}{Software}{
-  Arduino\septech Java\septech Python
+ Arduino\septech C\septech C++\septech Java\septech Python
 }
 
 \cvskills{\faWrench}{Tools}{
-  Azure\septech Docker\septech Latex\septech Git\septech SublimeText\septech SQL\septech Trello
+  Docker\septech Latex\septech Git\septech SublimeText\septech SQL\septech Trello
 }
 
 \cvskills{\faLightbulbO}{Innovation methodologies}{
   Design Thinking\septech SCRUM
 }
 
-\cvskills{\faCrop}{Grades}{
-  Maths: A\septech Algo: A+\septech Graph Theory: A+
-}
+% \cvskills{\faCrop}{Grades}{
+%   Maths: A\septech Algo: A+\septech Graph Theory: A+
+% }
 
 
 \end{document}
